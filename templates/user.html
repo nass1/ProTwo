@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <title>Fake users</title>
+
+
+    </head>
+    <h1>Here are Your users:</h1>
+
+    {% if users %}
+
+	<ol>
+        {% for i in users %}
+        <li>User Info
+        <ul>
+            <li>First Name: {{i.firstname}}</li>
+            <li>Last Name: {{i.lastname}}</li>
+            <li>Email: {{i.email}}</li>
+            </ul>
+        </li>
+
+       {% endfor %}
+
+    </ol>
+
+    {% endif %}
+
+
+
+
+</html>
