@@ -7,5 +7,6 @@ urlpatterns = [
     #url(r'^$', views.index, name='index'),
     url(r'^help/$', views.help, name='index'),
     url(r'^users/$', views.users, name='users'),
-
+    url(r'^contact/$', views.contact, name='contact'),
+    
 ]
